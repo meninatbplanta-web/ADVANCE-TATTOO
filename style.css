@@ -617,6 +617,26 @@ ul {
     font-size: 0.8rem;
 }
 
+/* Featured Logo Display */
+.logo-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+}
+
+.featured-logo {
+    max-width: 70%;
+    height: auto;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.9));
+    transition: transform 0.3s ease;
+}
+
+.featured-logo:hover {
+    transform: scale(1.05);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .grid-2, .grid-3 {
