@@ -188,6 +188,13 @@ ul {
     align-items: center;
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+
 .logo-text {
     font-family: var(--font-heading);
     font-size: 1.2rem;
