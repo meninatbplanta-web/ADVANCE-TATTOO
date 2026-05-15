@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Shop | Equipamentos de Elite</title>
+    <meta name="description" content="E-commerce oficial da Advanced Tattoo School. Compre máquinas, tintas e kits para iniciantes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header" style="background: var(--bg-main);">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-text" style="font-size: 1rem; color: var(--text-muted);">
+                    ← Voltar para o Hub
+                </a>
+            </div>
+            
+            <div class="search-bar-container" style="flex: 0.5; margin: 0; padding: 5px 10px; background: rgba(0,0,0,0.3);">
+                <input type="text" class="search-input" placeholder="Buscar produtos..." style="padding: 8px 15px; background: transparent; border: none;">
+                <span style="cursor:pointer; padding-right:10px;">🔍</span>
+            </div>
+
+            <div class="shop-header-icons">
+                <div class="cart-icon-wrapper" style="color: var(--text-muted); cursor: pointer;">
+                    👤 Minha Conta
+                </div>
+                <div class="cart-icon-wrapper" style="font-size: 1.5rem;">
+                    🛒
+                    <div class="cart-badge">2</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <!-- Hero Banner E-commerce -->
+        <section class="portfolio-hero" style="background: linear-gradient(to right, rgba(10, 10, 12, 0.95), rgba(10, 10, 12, 0.5)), url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&q=80&w=2000') center/cover; padding: 100px 0;">
+            <div class="container">
+                <div style="max-width: 600px;">
+                    <span class="badge">LANÇAMENTO EXCLUSIVO</span>
+                    <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Kit Calouro <span class="highlight">Advanced</span></h1>
+                    <p class="hero-subtitle" style="font-size: 1.2rem; margin-bottom: 2rem;">Tudo o que você precisa para o seu primeiro traço perfeito, selecionado pelos mestres da Advanced Tattoo School.</p>
+                    <a href="#" class="btn btn-primary btn-large">Comprar o Kit Completo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pt-0" style="margin-top: -30px; position: relative; z-index: 10;">
+            <div class="container">
+                <!-- Barra de Categorias -->
+                <div class="shop-categories glass-panel">
+                    <button class="shop-cat-btn active">Todos</button>
+                    <button class="shop-cat-btn">Kits Iniciantes</button>
+                    <button class="shop-cat-btn">Máquinas</button>
+                    <button class="shop-cat-btn">Tintas & Pigmentos</button>
+                    <button class="shop-cat-btn">Agulhas & Cartuchos</button>
+                    <button class="shop-cat-btn">Pele Sintética</button>
+                </div>
+
+                <!-- Grade de Produtos -->
+                <div class="grid-3" style="gap: 2rem;">
+                    
+                    <!-- Produto 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">Mais Vendido</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&q=80&w=300" alt="Máquina Pen Advanced" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Máquina Pen Advanced Pro v2</h3>
+                        <div class="product-price">R$ 1.299,90</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="product-card">
+                        <div class="product-badge" style="background: #e74c3c;">Escolha dos Mestres</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1589725514605-e3b97b09c2db?auto=format&fit=crop&q=80&w=300" alt="Kit Tinta Black" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Pigmento Ultra Black Advanced (240ml)</h3>
+                        <div class="product-price">R$ 189,90</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1562962230-16e4623d36e6?auto=format&fit=crop&q=80&w=300" alt="Cartuchos" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Cartuchos de Precisão RL - Caixa c/ 20</h3>
+                        <div class="product-price">R$ 145,00</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" alt="Pele Sintetica" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Pele Sintética RealFeel™ (Pacote c/ 5)</h3>
+                        <div class="product-price">R$ 89,90</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="product-card">
+                        <div class="product-badge">Novidade</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=300" alt="Fonte Power" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Fonte Digital PowerTattoo Mini</h3>
+                        <div class="product-price">R$ 459,00</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" alt="Pedal" class="product-img" style="border-radius: 8px;">
+                        </div>
+                        <h3 class="product-title">Pedal Premium em Alumínio</h3>
+                        <div class="product-price">R$ 119,90</div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline w-100" style="padding: 10px;">Adicionar ao Carrinho 🛒</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner de Integração (Cross-sell) -->
+        <section class="section bg-darker">
+            <div class="container text-center">
+                <div class="conversion-banner" style="margin: 0 auto;">
+                    <h2 class="section-title" style="font-size: 2.2rem;">Ainda não sabe como montar sua bancada?</h2>
+                    <p class="text-muted" style="margin-bottom: 2rem; font-size: 1.1rem;">Aprenda a escolher equipamentos, regulagem e biossegurança direto com os mestres da Advanced Tattoo School.</p>
+                    <a href="iniciantes.html" class="btn btn-primary btn-large">Conheça o Curso para Iniciantes</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé E-commerce -->
+    <footer class="footer" style="padding: 4rem 0 2rem; border-top: 1px solid var(--glass-border);">
+        <div class="container grid-3" style="gap: 2rem;">
+            <div>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.5rem; color: var(--accent-primary);">ADVANCED SHOP</h3>
+                <p class="text-muted" style="font-size: 0.9rem;">Equipamentos e suprimentos de alta performance para tatuadores exigentes.</p>
+            </div>
+            
+            <div>
+                <h4 style="margin-bottom: 1rem;">Políticas</h4>
+                <ul class="footer-links" style="line-height: 2;">
+                    <li><a href="#">Política de Troca e Devolução</a></li>
+                    <li><a href="#">Prazos de Entrega</a></li>
+                    <li><a href="#">Rastrear Pedido</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 1rem;">Pagamento Seguro</h4>
+                <div class="payment-icons" style="display: flex; gap: 15px;">
+                    <!-- SVG Placeholders para Cartões/Pix -->
+                    <svg width="40" height="25" viewBox="0 0 40 25" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="5" width="36" height="15" rx="2" ry="2"></rect><line x1="2" y1="10" x2="38" y2="10"></line></svg>
+                    <span style="font-family: var(--font-heading); font-weight: 800; color: #32BCAD;">PIX</span>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-5" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p class="text-muted" style="font-size: 0.8rem;">&copy; 2026 Advanced Tattoo School & Shop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
