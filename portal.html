@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="lms-layout">
         
         <!-- Sidebar Menu -->
-        <aside class="lms-sidebar">
+        <aside class="lms-sidebar glass-panel" style="border-radius: 0; border-top: none; border-bottom: none; border-left: none;">
             <h2 class="lms-greeting">Olá, Aluno(a)</h2>
             
             <div class="progress-container">
@@ -32,7 +32,7 @@
                 <div class="module-item active">
                     <div class="module-header">
                         Módulo 1: Biossegurança
-                        <span>▼</span>
+                        <span style="color: var(--accent-primary);">▼</span>
                     </div>
                     <div class="module-content">
                         <a href="#" class="lesson-link">Aula 1: Protocolos de Higiene</a>
@@ -44,7 +44,7 @@
                 <div class="module-item">
                     <div class="module-header">
                         Módulo 2: Equipamentos e Máquinas
-                        <span>▶</span>
+                        <span style="color: var(--text-muted);">▶</span>
                     </div>
                     <div class="module-content">
                         <a href="#" class="lesson-link">Aula 1: Máquinas de Bobina vs Pen</a>
@@ -56,7 +56,7 @@
                 <div class="module-item">
                     <div class="module-header">
                         Módulo 3: Técnicas de Traço
-                        <span>▶</span>
+                        <span style="color: var(--text-muted);">▶</span>
                     </div>
                     <div class="module-content">
                         <a href="#" class="lesson-link">Aula 1: Traço Fino (Fine Line)</a>
@@ -65,8 +65,8 @@
                 </div>
             </div>
 
-            <div class="logout-btn">
-                <a href="index.html" class="btn-outline-red" style="display: block; text-align: center; width: 100%;">Sair</a>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+                <a href="index.html" class="btn btn-outline" style="display: block; text-align: center; width: 100%;">Sair do Portal</a>
             </div>
         </aside>
 
@@ -78,7 +78,7 @@
             <div class="video-placeholder">
                 <div class="play-icon">
                     <!-- Play SVG -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 3l14 9-14 9V3z"/>
                     </svg>
                 </div>
@@ -88,8 +88,8 @@
                 <div class="video-controls">
                     <div style="display: flex; gap: 15px; align-items: center; width: 100%;">
                         <span style="color: white; font-size: 1.2rem; cursor: pointer;">⏸</span>
-                        <div style="flex: 1; height: 4px; background: #333; border-radius: 2px; position: relative;">
-                            <div style="position: absolute; top: 0; left: 0; height: 100%; width: 30%; background: var(--lms-red); border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; position: relative;">
+                            <div style="position: absolute; top: 0; left: 0; height: 100%; width: 30%; background: var(--accent-primary); border-radius: 2px; box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);"></div>
                         </div>
                         <span style="color: white; font-size: 0.8rem;">05:20 / 18:45</span>
                         <span style="color: white; cursor: pointer;">🔊</span>
@@ -99,13 +99,13 @@
             </div>
 
             <!-- Materiais Complementares -->
-            <section class="materials-section">
-                <h3 class="materials-title">Materiais para Download</h3>
+            <section style="margin-bottom: 3rem;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1rem; padding-bottom: 10px; border-bottom: 1px solid var(--glass-border);">Materiais para Download</h3>
                 
                 <div class="material-card">
-                    <div class="material-info">
+                    <div style="display: flex; align-items: center; gap: 15px;">
                         <!-- PDF Icon -->
-                        <svg class="pdf-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -114,12 +114,12 @@
                         </svg>
                         <span>Checklist_Descarte_Infectantes.pdf</span>
                     </div>
-                    <a href="#" class="btn-outline-red" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
+                    <a href="#" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
                 </div>
 
                 <div class="material-card">
-                    <div class="material-info">
-                        <svg class="pdf-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -128,14 +128,14 @@
                         </svg>
                         <span>Guia_Marcas_Homologadas_Anvisa.pdf</span>
                     </div>
-                    <a href="#" class="btn-outline-red" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
+                    <a href="#" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
                 </div>
             </section>
 
             <!-- Navigation -->
-            <div class="lesson-navigation">
-                <button class="btn-outline-red">Aula Anterior</button>
-                <button class="btn-red">Marcar como Concluída e Ir para a Próxima</button>
+            <div style="display: flex; justify-content: flex-end; gap: 1rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <button class="btn btn-secondary">Aula Anterior</button>
+                <button class="btn btn-primary">Marcar como Concluída e Ir para a Próxima</button>
             </div>
 
         </main>
@@ -152,9 +152,11 @@
                 if (item.classList.contains('active')) {
                     item.classList.remove('active');
                     icon.textContent = '▶';
+                    icon.style.color = 'var(--text-muted)';
                 } else {
                     item.classList.add('active');
                     icon.textContent = '▼';
+                    icon.style.color = 'var(--accent-primary)';
                 }
             });
         });
