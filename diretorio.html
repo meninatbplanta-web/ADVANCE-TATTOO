@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre um Tatuador | Advanced Tattoo School</title>
+    <meta name="description" content="Diretório de tatuadores certificados e credenciados pela Advanced Tattoo School.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header" style="background: var(--bg-main);">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-text" style="font-size: 1rem; color: var(--text-muted);">
+                    ← Voltar para o Hub
+                </a>
+            </div>
+            <a href="advanced-track.html" class="btn btn-outline">Seja um Tatuador Certificado</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <!-- Hero & Busca -->
+        <section class="section text-center">
+            <div class="container">
+                <h1 class="section-title">Encontre um <span class="highlight">Tatuador Certificado</span></h1>
+                <p class="section-subtitle" style="margin-bottom: 3rem;">Profissionais de elite treinados com o rigor e a excelência da Advanced Tattoo School. Encontre o artista ideal para a sua próxima tatuagem.</p>
+                
+                <div class="search-bar-container">
+                    <select class="search-input">
+                        <option value="">Todos os Estilos</option>
+                        <option value="fine-art">Fine Art</option>
+                        <option value="old-school">Old School</option>
+                        <option value="realismo">Realismo</option>
+                        <option value="astrais">Astrais / Místicos</option>
+                        <option value="blackwork">Blackwork</option>
+                    </select>
+                    
+                    <input type="text" class="search-input" placeholder="Localização (Cidade ou CEP)">
+                    
+                    <button class="btn btn-primary" style="padding: 14px 30px;">
+                        🔍 Buscar Tatuador
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resultados -->
+        <section class="section pt-0">
+            <div class="container">
+                <div class="grid-3">
+                    
+                    <!-- Card 1 -->
+                    <div class="glass-card artist-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" alt="Jessica" class="artist-photo">
+                        <h3 class="artist-name">Jessica Tattoo</h3>
+                        <div class="artist-seal">✓ Certificado Advanced Track</div>
+                        <div class="artist-location">📍 Morungaba - SP</div>
+                        <div class="artist-tags">
+                            <span class="artist-tag">Fine Art</span>
+                            <span class="artist-tag">Astrais</span>
+                            <span class="artist-tag">Delicados</span>
+                        </div>
+                        <a href="#" class="btn btn-outline w-100" style="font-size: 0.8rem; padding: 10px;">Ver Portfólio e Agendar</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card artist-card">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200" alt="Lucas" class="artist-photo">
+                        <h3 class="artist-name">Lucas Ink</h3>
+                        <div class="artist-seal">✓ Certificado Advanced Track</div>
+                        <div class="artist-location">📍 São Paulo - SP</div>
+                        <div class="artist-tags">
+                            <span class="artist-tag">Realismo</span>
+                            <span class="artist-tag">Blackwork</span>
+                        </div>
+                        <a href="#" class="btn btn-outline w-100" style="font-size: 0.8rem; padding: 10px;">Ver Portfólio e Agendar</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card artist-card">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="Mariana" class="artist-photo">
+                        <h3 class="artist-name">Mariana Silva</h3>
+                        <div class="artist-seal">✓ Certificado Advanced Track</div>
+                        <div class="artist-location">📍 Campinas - SP</div>
+                        <div class="artist-tags">
+                            <span class="artist-tag">Old School</span>
+                            <span class="artist-tag">Colorido</span>
+                        </div>
+                        <a href="#" class="btn btn-outline w-100" style="font-size: 0.8rem; padding: 10px;">Ver Portfólio e Agendar</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa -->
+        <section>
+            <div class="map-placeholder">
+                <div class="map-pin pin-1">📍</div>
+                <div class="map-pin pin-2">📍</div>
+                <div class="map-pin pin-3">📍</div>
+                <div style="position: relative; z-index: 10; text-align: center;">
+                    <h2 style="font-family: var(--font-heading); font-size: 2rem;">Explore o Mapa</h2>
+                    <p class="text-muted">Encontre o estúdio mais próximo de você.</p>
+                    <button class="btn btn-primary mt-5">Ativar Mapa Interativo</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner de Conversão (Ecossistema) -->
+        <section class="section">
+            <div class="container">
+                <div class="conversion-banner">
+                    <h2 class="section-title" style="font-size: 2rem;">Você é tatuador e quer fazer parte do nosso diretório exclusivo?</h2>
+                    <p class="text-muted" style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Eleve o nível do seu trabalho, conquiste o certificado Advanced Tattoo School e receba clientes diretamente da nossa plataforma.
+                    </p>
+                    <a href="advanced-track.html" class="btn btn-primary btn-large">Conheça o Advanced Track</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h3 class="footer-logo">ADVANCE TATTOO</h3>
+            <p class="text-muted" style="font-size: 0.8rem; margin-top: 1rem;">&copy; 2026 Advanced Tattoo School. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
