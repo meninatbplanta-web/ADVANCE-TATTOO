@@ -1,0 +1,380 @@
+/* Portal do Aluno - Strict Palette: Red, Black, White */
+
+:root {
+    --lms-bg: #000000;
+    --lms-panel: #0d0d10;
+    --lms-panel-light: #16161a;
+    --lms-text: #ffffff;
+    --lms-text-muted: #888888;
+    --lms-red: #ff0000;
+    --lms-red-hover: #cc0000;
+    --lms-border: #222222;
+    --font-sans: 'Inter', sans-serif;
+    --font-heading: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Strict link reset to avoid any default blue */
+a {
+    color: var(--lms-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus, a:active {
+    color: var(--lms-red);
+    outline: none; /* remove blue default outline */
+}
+
+/* Input focus reset to avoid any default blue */
+input:focus, button:focus {
+    outline: 2px solid var(--lms-red);
+    outline-offset: 2px;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--lms-bg);
+    color: var(--lms-text);
+    line-height: 1.5;
+}
+
+/* Utilities */
+.text-red { color: var(--lms-red); }
+.text-muted { color: var(--lms-text-muted); }
+
+/* Buttons */
+.btn-red {
+    background-color: var(--lms-red);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-red:hover {
+    background-color: var(--lms-red-hover);
+}
+
+.btn-outline-red {
+    background-color: transparent;
+    color: var(--lms-text);
+    border: 1px solid var(--lms-red);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-red:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* =========================================
+   VIEW 1: Login Page
+========================================= */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--lms-bg);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem 2rem;
+    background: var(--lms-panel);
+    border: 1px solid var(--lms-border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--lms-red);
+    margin-bottom: 1.5rem;
+}
+
+.login-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--lms-text-muted);
+}
+
+.input-field {
+    width: 100%;
+    background: var(--lms-bg);
+    border: 1px solid var(--lms-border);
+    color: var(--lms-text);
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-field:focus {
+    border-color: var(--lms-red);
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    color: var(--lms-text-muted);
+    cursor: pointer;
+}
+
+/* =========================================
+   VIEW 2: Dashboard LMS
+========================================= */
+.lms-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.lms-sidebar {
+    background: var(--lms-panel);
+    border-right: 1px solid var(--lms-border);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+}
+
+.lms-greeting {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.progress-container {
+    margin-bottom: 2rem;
+}
+
+.progress-text {
+    font-size: 0.8rem;
+    color: var(--lms-text-muted);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: var(--lms-border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--lms-red);
+    width: 45%; /* default example */
+}
+
+.module-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.module-item {
+    margin-bottom: 0.5rem;
+}
+
+.module-header {
+    background: var(--lms-panel-light);
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid transparent;
+}
+
+.module-item.active .module-header {
+    border-left-color: var(--lms-red);
+}
+
+.module-content {
+    display: none;
+    padding: 10px 0;
+}
+
+.module-item.active .module-content {
+    display: block;
+}
+
+.lesson-link {
+    display: block;
+    padding: 8px 15px 8px 30px;
+    font-size: 0.85rem;
+    color: var(--lms-text-muted);
+}
+
+.lesson-link:hover, .lesson-link.active {
+    color: var(--lms-text);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.lesson-link.active::before {
+    content: '▶';
+    color: var(--lms-red);
+    margin-right: 8px;
+    font-size: 0.7rem;
+}
+
+.logout-btn {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--lms-border);
+}
+
+/* Main Content */
+.lms-main {
+    padding: 2rem 4rem;
+    background: var(--lms-bg);
+    overflow-y: auto;
+}
+
+.lesson-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--lms-panel);
+    border: 1px solid var(--lms-border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--lms-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.play-icon:hover {
+    transform: scale(1.1);
+}
+
+.play-icon svg {
+    margin-left: 5px;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.materials-section {
+    margin-bottom: 3rem;
+}
+
+.materials-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--lms-border);
+}
+
+.material-card {
+    background: var(--lms-panel);
+    border: 1px solid var(--lms-border);
+    padding: 15px 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.material-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pdf-icon {
+    color: var(--lms-red);
+}
+
+.lesson-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--lms-border);
+}
+
+@media (max-width: 992px) {
+    .lms-layout {
+        grid-template-columns: 1fr;
+    }
+    .lms-sidebar {
+        display: none; /* Would need a toggle in a real app */
+    }
+    .lms-main {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Aulas | Portal do Aluno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+
+    <div class="lms-layout">
+        
+        <!-- Sidebar Menu -->
+        <aside class="lms-sidebar">
+            <h2 class="lms-greeting">Olá, Aluno(a)</h2>
+            
+            <div class="progress-container">
+                <div class="progress-text">
+                    <span>Progresso: 45%</span>
+                    <span>5/12 Aulas</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="module-list">
+                <!-- Module 1 -->
+                <div class="module-item active">
+                    <div class="module-header">
+                        Módulo 1: Biossegurança
+                        <span>▼</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#" class="lesson-link">Aula 1: Protocolos de Higiene</a>
+                        <a href="#" class="lesson-link active">Aula 2: Descarte de Materiais</a>
+                    </div>
+                </div>
+                
+                <!-- Module 2 -->
+                <div class="module-item">
+                    <div class="module-header">
+                        Módulo 2: Equipamentos e Máquinas
+                        <span>▶</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#" class="lesson-link">Aula 1: Máquinas de Bobina vs Pen</a>
+                        <a href="#" class="lesson-link">Aula 2: Montagem e Regulagem</a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-item">
+                    <div class="module-header">
+                        Módulo 3: Técnicas de Traço
+                        <span>▶</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#" class="lesson-link">Aula 1: Traço Fino (Fine Line)</a>
+                        <a href="#" class="lesson-link">Aula 2: Bold Line</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logout-btn">
+                <a href="index.html" class="btn-outline-red" style="display: block; text-align: center; width: 100%;">Sair</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lms-main">
+            <h1 class="lesson-title">Aula 2: Descarte de Materiais</h1>
+            
+            <!-- Video Player Placeholder -->
+            <div class="video-placeholder">
+                <div class="play-icon">
+                    <!-- Play SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 3l14 9-14 9V3z"/>
+                    </svg>
+                </div>
+                <p class="text-muted" style="font-size: 0.9rem;">Player de Vídeo (16:9)</p>
+                
+                <!-- Controls bar placeholder -->
+                <div class="video-controls">
+                    <div style="display: flex; gap: 15px; align-items: center; width: 100%;">
+                        <span style="color: white; font-size: 1.2rem; cursor: pointer;">⏸</span>
+                        <div style="flex: 1; height: 4px; background: #333; border-radius: 2px; position: relative;">
+                            <div style="position: absolute; top: 0; left: 0; height: 100%; width: 30%; background: var(--lms-red); border-radius: 2px;"></div>
+                        </div>
+                        <span style="color: white; font-size: 0.8rem;">05:20 / 18:45</span>
+                        <span style="color: white; cursor: pointer;">🔊</span>
+                        <span style="color: white; cursor: pointer;">⛶</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materiais Complementares -->
+            <section class="materials-section">
+                <h3 class="materials-title">Materiais para Download</h3>
+                
+                <div class="material-card">
+                    <div class="material-info">
+                        <!-- PDF Icon -->
+                        <svg class="pdf-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        <span>Checklist_Descarte_Infectantes.pdf</span>
+                    </div>
+                    <a href="#" class="btn-outline-red" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-info">
+                        <svg class="pdf-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        <span>Guia_Marcas_Homologadas_Anvisa.pdf</span>
+                    </div>
+                    <a href="#" class="btn-outline-red" style="padding: 6px 15px; font-size: 0.8rem;">Download</a>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="lesson-navigation">
+                <button class="btn-outline-red">Aula Anterior</button>
+                <button class="btn-red">Marcar como Concluída e Ir para a Próxima</button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Simple JS for the Accordion Menu -->
+    <script>
+        document.querySelectorAll('.module-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const icon = header.querySelector('span');
+                
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    icon.textContent = '▶';
+                } else {
+                    item.classList.add('active');
+                    icon.textContent = '▼';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
