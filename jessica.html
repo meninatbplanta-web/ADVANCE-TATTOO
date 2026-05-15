@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Tattoo | Portfólio</title>
+    <title>Jessica Tattoo | Portfólio Premium</title>
     <meta name="description" content="Arte na pele. Estúdio privativo em Morungaba - SP com a tatuadora Jessica.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,87 +11,163 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header" id="header" style="background: var(--bg-main);">
+    <header class="header" id="header" style="background: rgba(10, 10, 12, 0.95); backdrop-filter: blur(10px);">
         <div class="container header-content">
             <div class="logo">
-                <a href="diretorio.html" class="logo-text" style="font-size: 1rem; color: var(--text-muted);">
-                    ← Voltar para o Diretório
+                <a href="diretorio.html" class="logo-text" style="font-size: 0.9rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.2rem;">←</span> Voltar ao Diretório
                 </a>
             </div>
-            <a href="index.html" class="logo-img" style="font-family: var(--font-heading); font-weight: 900; color: var(--accent-primary);">ADVANCE TATTOO</a>
+            <a href="index.html" class="logo-img" style="font-family: var(--font-heading); font-weight: 900; color: var(--accent-primary); letter-spacing: 2px;">ADVANCE TATTOO</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="portfolio-hero">
+        <!-- Hero Section Redesign -->
+        <section class="portfolio-hero" style="background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%); min-height: 90vh; display: flex; align-items: center; padding-top: 120px;">
             <div class="container">
-                <div class="grid-2 align-center">
+                <div class="grid-2 align-center" style="gap: 4rem;">
                     <div>
-                        <h1 class="hero-title" style="font-size: 3.5rem;">Jessica <span class="highlight">Tattoo</span></h1>
-                        <p class="hero-subtitle" style="font-size: 1.25rem;">Arte na pele. Estúdio Privativo em Morungaba - SP.</p>
-                        <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20com%20a%20Jessica" target="_blank" class="btn btn-primary btn-large mt-5">Agendar meu horário</a>
+                        <div style="display: inline-block; padding: 5px 15px; border: 1px solid var(--accent-primary); border-radius: 30px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-primary); margin-bottom: 2rem;">
+                            Tatuadora Certificada
+                        </div>
+                        <h1 class="hero-title" style="font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem;">Jessica <br><span class="highlight">Tattoo</span></h1>
+                        <p class="hero-subtitle" style="font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--text-muted); max-width: 90%;">Transformando histórias em arte eterna. Especialista em Fine Line, Old School e Esoterismo. Atendimento exclusivo em estúdio privativo.</p>
+                        
+                        <div style="display: flex; gap: 15px;">
+                            <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20com%20a%20Jessica" target="_blank" class="btn btn-primary btn-large">Agendar Sessão</a>
+                            <a href="#portfolio" class="btn btn-outline btn-large">Ver Trabalhos</a>
+                        </div>
                     </div>
-                    <div class="image-wrapper text-center">
-                        <div class="glass-panel" style="padding: 1rem; display: inline-block;">
-                            <img src="assets/jessica.jpg" alt="Jessica Tattoo" class="img-fluid rounded" style="max-height: 500px; width: auto; border: 2px solid var(--accent-primary);">
+                    <div class="image-wrapper" style="position: relative;">
+                        <!-- Decoração de Fundo -->
+                        <div style="position: absolute; top: -20px; right: -20px; width: 100%; height: 100%; border: 2px solid var(--glass-border); border-radius: 12px; z-index: 0;"></div>
+                        
+                        <div class="glass-panel" style="padding: 1rem; position: relative; z-index: 1;">
+                            <img src="assets/jessica.jpg" alt="Jessica Tattoo" class="img-fluid rounded" style="width: 100%; height: 600px; object-fit: cover; filter: grayscale(20%) contrast(110%);">
+                        </div>
+                        
+                        <!-- Badge flutuante -->
+                        <div class="glass-card" style="position: absolute; bottom: 30px; left: -30px; z-index: 2; padding: 15px 25px; display: flex; align-items: center; gap: 15px;">
+                            <div style="font-size: 2rem;">📍</div>
+                            <div>
+                                <h4 style="margin: 0; font-family: var(--font-heading);">Morungaba, SP</h4>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Estúdio Privativo</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sobre e Estúdio -->
-        <section class="section bg-darker">
+        <!-- Galeria de Estilos Imersiva -->
+        <section class="section" id="portfolio" style="background: var(--bg-tertiary);">
             <div class="container">
-                <div class="glass-panel" style="max-width: 800px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
-                    <h2 class="section-title" style="font-size: 2rem;">Sobre o <span class="highlight">Estúdio</span></h2>
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-main);">
-                        Localizado em Morungaba - SP, meu estúdio foi desenhado para oferecer uma experiência exclusiva e intimista. Todo o atendimento é realizado de forma privada e <strong>rigorosamente com hora marcada</strong>, garantindo foco total na sua arte, máxima higiene e um ambiente confortável para a sua sessão.
-                    </p>
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="section-title">Obras <span class="highlight">Recentes</span></h2>
+                    <p class="text-muted" style="font-size: 1.1rem;">Navegue pelos meus estilos de especialidade.</p>
+                </div>
+
+                <div class="filter-buttons" style="margin-bottom: 3rem;">
+                    <button class="filter-btn active" data-filter="all">Todos os Estilos</button>
+                    <button class="filter-btn" data-filter="fine-art">Fine Line</button>
+                    <button class="filter-btn" data-filter="old-school">Old School</button>
+                    <button class="filter-btn" data-filter="astrais">Astrais</button>
+                </div>
+
+                <div class="masonry-grid">
+                    <!-- Imagens Geradas por IA -->
+                    <div class="gallery-item fine-art">
+                        <img src="assets/fine1.png" alt="Fine Line Butterfly">
+                        <div class="gallery-overlay">
+                            <h3>Borboleta Delicada</h3>
+                            <p>Fine Line & Realismo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item old-school">
+                        <img src="assets/old1.png" alt="Old School Panther">
+                        <div class="gallery-overlay">
+                            <h3>Pantera Negra</h3>
+                            <p>Tradicional Old School</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item astrais">
+                        <img src="assets/astral1.png" alt="Astral Moon Phases">
+                        <div class="gallery-overlay">
+                            <h3>Fases da Lua</h3>
+                            <p>Astrais & Dotwork</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fine-art">
+                        <img src="assets/fine2.png" alt="Fine Line Flower">
+                        <div class="gallery-overlay">
+                            <h3>Arranjo Botânico</h3>
+                            <p>Fine Line Minimalista</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item astrais">
+                        <img src="assets/astral2.png" alt="Astral Tarot">
+                        <div class="gallery-overlay">
+                            <h3>A Estrela (Tarot)</h3>
+                            <p>Esoterismo & Textura</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item old-school">
+                        <img src="assets/old2.png" alt="Old School Rose">
+                        <div class="gallery-overlay">
+                            <h3>Rosa e Adaga</h3>
+                            <p>Tradicional Clássico</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Galeria de Estilos -->
-        <section class="section" id="portfolio">
+        <!-- Nova Seção: FAQ (Sua Primeira Tatuagem?) -->
+        <section class="section" style="padding: 6rem 0;">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 3rem;">
-                    <h2 class="section-title">Meu <span class="highlight">Portfólio</span></h2>
-                    <p class="text-muted">Explore alguns dos meus trabalhos recentes.</p>
-                </div>
+                <div class="grid-2" style="gap: 4rem;">
+                    <div>
+                        <h2 class="section-title">Sua Primeira <br><span class="highlight">Tatuagem?</span></h2>
+                        <p class="text-muted" style="margin-bottom: 2rem; font-size: 1.1rem;">Tatuar é uma experiência transformadora. Aqui estão as respostas para as dúvidas mais comuns de quem visita meu estúdio.</p>
+                        <a href="https://wa.me/5511985370138" target="_blank" class="btn btn-outline">Tirar outra dúvida no WhatsApp</a>
+                    </div>
+                    
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Como funciona o agendamento?
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Todo o processo começa com uma conversa no WhatsApp. Avaliamos a sua ideia, tamanho e local do corpo. Após a aprovação do orçamento, reservamos a sua data mediante o pagamento de um sinal.</p>
+                            </div>
+                        </div>
 
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Todas</button>
-                    <button class="filter-btn" data-filter="fine-art">Fine Art</button>
-                    <button class="filter-btn" data-filter="old-school">Old School</button>
-                    <button class="filter-btn" data-filter="astrais">Tatuagens Astrais</button>
-                </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Você cria a arte na hora?
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Não. Eu crio o design com antecedência baseado nas suas referências e envio para aprovação antes do dia da sessão. Apenas ajustes menores são feitos no estúdio.</p>
+                            </div>
+                        </div>
 
-                <div class="masonry-grid">
-                    <!-- Fine Art -->
-                    <div class="gallery-item fine-art">
-                        <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&q=80&w=400" alt="Fine Art Tattoo">
-                    </div>
-                    <!-- Old School -->
-                    <div class="gallery-item old-school">
-                        <img src="https://images.unsplash.com/photo-1562962230-16e4623d36e6?auto=format&fit=crop&q=80&w=400" alt="Old School Tattoo">
-                    </div>
-                    <!-- Astrais -->
-                    <div class="gallery-item astrais">
-                        <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&q=80&w=400" alt="Astral Tattoo">
-                    </div>
-                    <!-- Fine Art -->
-                    <div class="gallery-item fine-art">
-                        <img src="https://images.unsplash.com/photo-1589725514605-e3b97b09c2db?auto=format&fit=crop&q=80&w=400" alt="Fine Art Tattoo">
-                    </div>
-                    <!-- Astrais -->
-                    <div class="gallery-item astrais">
-                        <img src="https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=400" alt="Astral Tattoo">
-                    </div>
-                    <!-- Old School -->
-                    <div class="gallery-item old-school">
-                        <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&q=80&w=400" alt="Old School Tattoo">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Dói muito? E como é a cicatrização?
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>A dor varia muito de pessoa para pessoa e do local do corpo. A cicatrização leva cerca de 15 a 30 dias. No fim da sessão, eu te entrego um guia completo de cuidados em PDF (o mesmo da Advanced Tattoo School) e um adesivo curativo profissional.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,52 +176,68 @@
         <!-- Serviços Especiais -->
         <section class="section bg-darker">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 3rem;">
+                <div class="text-center" style="margin-bottom: 4rem;">
                     <h2 class="section-title">Serviços <span class="highlight">Especiais</span></h2>
                 </div>
                 
                 <div class="grid-2">
-                    <div class="glass-card text-center" style="padding: 3rem 2rem;">
-                        <div class="card-icon" style="font-size: 4rem;">⚡</div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Flash Tattoos</h3>
-                        <p style="color: var(--text-muted);">Designs exclusivos da artista, prontos para tatuar. Ideais para quem busca uma arte autêntica sem o tempo de criação sob medida. Consulte a disponibilidade dos flashes atuais.</p>
-                        <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20ver%20os%20Flash%20Tattoos%20disponíveis" target="_blank" class="btn btn-outline mt-5">Consultar Flashes</a>
+                    <div class="glass-card" style="padding: 3rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; opacity: 0.05;">⚡</div>
+                        <div class="card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 1.5rem;">⚡</div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Flash Tattoos</h3>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Designs exclusivos e autorais, prontos para tatuar. Perfeitos para quem quer uma arte única sem a espera de um projeto sob medida.</p>
+                        <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20ver%20os%20Flash%20Tattoos%20disponíveis" target="_blank" class="btn btn-outline">Ver Flashes Disponíveis</a>
                     </div>
 
-                    <div class="glass-card text-center" style="padding: 3rem 2rem;">
-                        <div class="card-icon" style="font-size: 4rem;">🎟️</div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Eventos e Guest</h3>
-                        <p style="color: var(--text-muted);">Presença garantida para tatuagem ao vivo em eventos selecionados. Levamos a estrutura da Advance Tattoo para oferecer flashes rápidos e de alta qualidade no seu evento.</p>
-                        <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20levar%20a%20Jessica%20para%20o%20meu%20evento" target="_blank" class="btn btn-outline mt-5">Levar para Evento</a>
+                    <div class="glass-card" style="padding: 3rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; opacity: 0.05;">🎟️</div>
+                        <div class="card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 1.5rem;">🎟️</div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Eventos & Guest</h3>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Presença garantida para tatuagem ao vivo em eventos selecionados. Leve a estrutura e a arte da Advance Tattoo para o seu evento.</p>
+                        <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20levar%20a%20Jessica%20para%20o%20meu%20evento" target="_blank" class="btn btn-outline">Reservar Data</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Final -->
-        <section class="section" style="padding: 6rem 0;">
-            <div class="container text-center">
-                <h2 class="section-title" style="font-size: 3rem;">Pronto para sua <span class="highlight">próxima tatuagem?</span></h2>
-                <p class="section-subtitle" style="margin-bottom: 3rem; font-size: 1.2rem;">Atendimento exclusivo com hora marcada em Morungaba - SP.</p>
-                <a href="https://wa.me/5511985370138?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20com%20a%20Jessica" target="_blank" class="btn btn-primary btn-large">Agendar Agora</a>
-            </div>
-        </section>
     </main>
 
     <!-- Rodapé -->
-    <footer class="footer text-center" style="padding: 2rem 0; border-top: 1px solid var(--glass-border);">
+    <footer class="footer text-center" style="padding: 3rem 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
-            <h3 style="font-family: var(--font-heading); margin-bottom: 1rem;">@jessica.tattoo</h3>
-            <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">
-                Acompanhe o dia a dia e novos trabalhos no <a href="#" style="color: var(--accent-primary);">Instagram</a>.
+            <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Jessica Tattoo</h3>
+            <p class="text-muted" style="font-size: 1rem; margin-bottom: 2rem;">
+                Acompanhe o dia a dia e novos trabalhos no <a href="#" style="color: var(--accent-primary); font-weight: 600;">Instagram</a>.
             </p>
-            <div style="margin-top: 2rem; display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.05); padding: 8px 15px; border-radius: 30px; border: 1px solid var(--glass-border);">
-                <img src="assets/logo-hub.jpg" alt="Advance Logo" style="width: 24px; height: 24px; border-radius: 50%;">
-                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);">Powered by Advanced Tattoo School</span>
+            <div style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.02); padding: 10px 20px; border-radius: 30px; border: 1px solid var(--glass-border);">
+                <img src="assets/logo-hub.jpg" alt="Advance Logo" style="width: 28px; height: 28px; border-radius: 50%;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);">Certificada pela Advanced Tattoo School</span>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts (Galeria & FAQ) -->
     <script src="script.js"></script>
+    <script>
+        // Lógica simples para o FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Fecha todos
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.querySelector('span').textContent = '+';
+                });
+
+                // Se não estava ativo, abre
+                if (!isActive) {
+                    item.classList.add('active');
+                    question.querySelector('span').textContent = '−';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
